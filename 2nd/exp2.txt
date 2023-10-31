@@ -1,0 +1,41 @@
+(Go through the chat gpt chat, it has some extra commands and explanation to each in the order followed below)
+Chat GPT Chat: https://chat.openai.com/share/b89057d0-ff2c-4992-b921-3b6f9e8b4c1b
+
+
+Commands:
+    1) ping google.com
+       ping -c 4 google.com
+       ping -i 2 google.com
+       ping -s 32 google.com 
+
+    2) tracert google.com   
+       tracert -d google.com
+      (this command is only for windows)
+
+    3) nslookup google.com 
+
+    4) netstat
+
+    5) arp -n 
+       ip neigh show
+
+    6) rarp -a
+       sudo rarpd -a
+      (these commands may not work as they are not supported by the modern systems)
+
+    7) ip link show
+       ip address show
+       ip route show
+
+    8) ifconfig
+       ifconfig eth0
+       ifconfig eth0 192.168.1.2
+
+    9) dig google.com
+       dig MX google.com
+       dig CNAME google.com
+       dig +short google.com
+
+    10) route
+        route add default gw 192.168.1.1
+
