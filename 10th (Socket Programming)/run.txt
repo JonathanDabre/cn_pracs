@@ -1,0 +1,12 @@
+compile
+javac MyServer.java
+
+run 
+java MyServer
+
+compile
+javac MyClient.java
+
+run 
+java MyClient
+
