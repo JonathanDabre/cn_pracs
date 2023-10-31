@@ -1,18 +1,21 @@
-sudo ifconfig - name will appear example enp0s3 or eth0 and address 192.168.1.103/24 or something else will appear
+Commands: 
+    1) sudo ifconfig 
+       (name will appear example enp0s3 or eth0 and address 192.168.1.103/24 or something else will appear)
+       (Note down your device name. It appears in top-left of terminal response, e.g. => enp0s3)
 
-sudo ip addr add 192.168.1.104/24 dev <device name> - 
+    2) sudo ip addr add 192.168.1.104/24 dev <device name>  
 
-sudo ip address show <device name> -
+    3) sudo ip address show <device name> 
 
-sudo ping 192.168.1.104 -
+    4) sudo ping 192.168.1.104 
 
 
-netstat -rn -
+    5) netstat -rn 
 
-sudo route add -net 192.168.3.0 gw 192.168.1.1 netmask 255.255.255.0 dev <device name> -
+    6) sudo route add -net 192.168.3.0 gw 192.168.1.1 netmask 255.255.255.0 dev <device name> 
 
-sudo route del -net 192.168.3.0 gw 192.168.1.1 netmask 255.255.255.0 dev <device name> -
+    7) sudo route del -net 192.168.3.0 gw 192.168.1.1 netmask 255.255.255.0 dev <device name> 
 
-sudo route add default gw 192.168.1.1 -
+    8) sudo route add default gw 192.168.1.1 
 
-sudo route del default gw 192.168.1.1 -
+    9) sudo route del default gw 192.168.1.1 
