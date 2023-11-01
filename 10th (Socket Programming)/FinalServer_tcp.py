@@ -14,6 +14,7 @@ def main():
         
         # Server Address => Server listens to local machine on port 1668
         servaddr = ('localhost', 1668)
+        
         sfd.bind(servaddr) #bind allows server to recieve incoming connection
         print("Binding Successful")
         
@@ -33,12 +34,14 @@ def main():
             
             message = input("Enter something:\n") #send message
             com_s.send(message.encode('utf-8')) # send in utf-8 encoding.
+         
+        sfd.close()   
             
-        sfd.close()
         
     except Exception as e:
         print(f"Socket connection failed: {e}")
         
+    
 
 if __name__ == '__main__':
     main()

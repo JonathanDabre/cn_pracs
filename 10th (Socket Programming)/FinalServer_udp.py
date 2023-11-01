@@ -5,18 +5,18 @@ def main():
         # Create a UDP socket
         # we are using SOCK_DGRAM for UDP
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        print("SOCKET CREATED SUCCESSFULLY")
         
         servaddr = ('localhost', 1668)
         sock.bind(servaddr)
         
-        print("SOCKET CREATED SUCCESSFULLY")
         
         while True:
             buff, cliaddr = sock.recvfrom(100) #recvfrom => recievefrom since connectionless(udp)
             str = buff.decode('utf-8')
             print(f"DATA RECEIVED FROM {cliaddr} : {str}")
             
-            if buff.decode('utf-8') == "exit":
+            if str == "exit":
                 break
             
             message = input("Enter a message to send to the client:\n")

@@ -15,7 +15,7 @@ def main():
             sock.send(message.encode('utf-8'))
             
             str = sock.recv(100).decode('utf-8')
-            print(f"\nString recieved: {str}")
+            print(f"\nString recieved from server: {str}")
             
             if str == "exit":
                 break
