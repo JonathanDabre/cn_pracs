@@ -11,6 +11,7 @@ Commands:
     2) tracert google.com   
        tracert -d google.com
       (this command is only for windows)
+        traceroute google.com (for linux)
 
     3) nslookup google.com 
 
