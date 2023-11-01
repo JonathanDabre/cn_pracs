@@ -1,3 +1,4 @@
+#tcp
 import socket
 
 def main():
