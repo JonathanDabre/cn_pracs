@@ -18,6 +18,8 @@ def main():
             # Receive and display a message from the server
             buff, servaddr = sockfd.recvfrom(100)
             print("MESSAGE RECEIVED FROM SERVER:", buff.decode('utf-8'))
+            
+            
     
     except Exception as e:
         print("Socket connection failed:", e)

@@ -34,6 +34,7 @@ def main():
             
             message = input("Enter something:\n") #send message
             com_s.send(message.encode('utf-8')) # send in utf-8 encoding.
+            
          
         sfd.close()   
             
